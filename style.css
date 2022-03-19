@@ -94,6 +94,7 @@ body{
     background-color: #fff;
     color: #132235;
     border: 2px solid #132235;
+    cursor: pointer;
 }
 
 .container_quemSomos{
@@ -153,6 +154,58 @@ body{
     border-radius: 5px;
     text-align: center;
 }
+.container_formulario{
+    background-image: url('assets/img_form.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 540px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info_form{
+    width: 30%;
+    height: 90%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.info_form h4{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.input_padrao{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #BBBDBF;
+    border-radius: 5px;
+    outline: none;
+}
+.input_padrao::-webkit-input-placeholder{
+    color: #BBBDBF;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 320px) and (max-width: 800px){
     header, main, footer{
@@ -199,5 +252,14 @@ body{
     }
     .info_moradia,.info_gerenciamento,.info_reforma{
         margin-bottom: 20px;
+    }
+    .info_form{
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding: 20px;
+    }
+    .input_padrao{
+        margin: 10px;
     }
 }
