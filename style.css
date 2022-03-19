@@ -2,9 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -22,6 +19,7 @@ body{
     padding: 0 20px;
     height: 80px;
 }
+
 .img_logo{
     height: auto;
 }
@@ -106,9 +104,11 @@ body{
     width: 900px;
     margin: 20px auto;
 }
+
 .container_quemSomos h2{
     text-transform: uppercase;
 }
+
 .container_quemSomos p{
     font-weight: lighter;
     font-size: 20px;
@@ -137,31 +137,33 @@ body{
 .lista_oQueFazemos img{
     width: 220px;
 }
+
 .lista_oQueFazemos h4{
     text-transform: uppercase;
     margin: .75em 0;
 }
+
 .lista_oQueFazemos p{
     margin: .75em 0;
     font-weight: lighter;
     padding: 0 15px;
     line-height: 25px;
 }
-.info_moradia, .info_gerenciamento,.info_reforma{
+
+.info_moradia, .info_gerenciamento, .info_reforma{
     width: 250px;
     padding: 10px;
     border: 1px solid #BBBDBF;
     border-radius: 5px;
     text-align: center;
 }
+
 .container_formulario{
     background-image: url('assets/img_form.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     height: 540px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,73 +194,121 @@ body{
     border: 1px solid #BBBDBF;
     border-radius: 5px;
     outline: none;
+    resize: none;
 }
+
 .input_padrao::-webkit-input-placeholder{
     color: #BBBDBF;
     font-family: 'Roboto', sans-serif;
 }
 
+.container_rodape{
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-bottom: 1px solid #BBBDBF;
+}
 
+.container_rodape h6{
+    color: #132235;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
+.links_rodape{
+    display: flex;
+}
 
+.lista_links{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    list-style: none;
+}
 
+.lista_links a{
+    color: #BBBDBF;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
 
+.lista_links .fa-brands{
+    color:#132235;
+}
 
-
-
+.copyright{
+    text-align: center;
+    margin: 20px;
+    color:#BBBDBF;
+}
 
 @media screen and (min-width: 320px) and (max-width: 800px){
     header, main, footer{
         width: auto;
     }
+
     .container_header{
         height: auto;
         flex-direction: column;
         align-items: center;
         padding: 15px 0;
     }
+
     .nav_header{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .nav_header a{
         font-size: 1em;
         margin: 0.75em .75em;
     }
+
     .background_image{
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .info_home{
         position: unset;
         width: 85%;
         padding: 20px;
     }
+
     .info_home h1{
         font-size: 1.5em ;
     }
+
     .info_home p{
         font-size: 1.2em;
     }
+
     .info_quemSomos{
         width: auto;
     }
+
     .lista_oQueFazemos{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
+
     .info_moradia,.info_gerenciamento,.info_reforma{
         margin-bottom: 20px;
     }
+
     .info_form{
         width: auto;
         height: auto;
         margin: 20px;
         padding: 20px;
     }
+
     .input_padrao{
         margin: 10px;
     }
