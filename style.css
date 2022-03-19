@@ -34,7 +34,7 @@ body{
 }
 
 .container_home{
-    position: relative
+    width: auto;
 }
 
 .background_image{
@@ -46,9 +46,8 @@ body{
 
 .info_home{
     background-color: rgba(255,255,255,0.67);
-    width: 900px;
-    height: 350px;
-    position: absolute;
+    width: 70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,11 +90,24 @@ body{
     border: 2px solid #132235;
 }
 
-
-
-
-
-
+.container_quemSomos{
+    margin: 2em 0;
+    text-align: center;
+}
+.info_quemSomos{
+    width: 900px;
+    margin: 20px auto;
+}
+.container_quemSomos h2{
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+.container_quemSomos p{
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 2.5em 0;
+    padding: 0 4em;
+}
 
 
 
@@ -133,5 +145,8 @@ body{
     }
     .info_home p{
         font-size: 1.2em;
+    }
+    .info_quemSomos{
+        width: auto;
     }
 }
