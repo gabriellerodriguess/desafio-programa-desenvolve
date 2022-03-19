@@ -22,6 +22,7 @@ body{
 
 .nav_header a{
     color: #FFF;
+    font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 2.5em;
@@ -32,5 +33,60 @@ body{
     cursor: pointer;
 }
 
+.container_home{
+    position: relative
+}
 
+.background_image{
+    background-image: url('assets/img_home.png');
+    height: 540px;
+    background-position: center;
+    background-size: cover;
+}
 
+.info_home{
+    background-color: rgba(255,255,255,0.67);
+    width: 900px;
+    height: 350px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 80px;
+    left: 200px;
+    border-radius: 10px;   
+    padding: 1em;
+}
+
+.info_home h1{
+    color: #132235;
+    font-size: 2em;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.info_home p{
+    color: #132235;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: lighter;
+    padding: 0 1.5em;
+}
+
+.btn_padrao{
+    background-color: #132235;
+    color: #fff;
+    font-size: .75em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.btn_padrao:hover{
+    background-color: #fff;
+    color: #132235;
+    border: 2px solid #132235;
+}
