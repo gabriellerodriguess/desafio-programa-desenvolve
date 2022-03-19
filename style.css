@@ -8,6 +8,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.center_elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container_header{
     background-color: #132235;
     display: flex;
@@ -92,6 +98,7 @@ body{
 
 .container_quemSomos{
     margin: 2em 0;
+    padding: 1em 0 2em 0;
     text-align: center;
 }
 .info_quemSomos{
@@ -100,7 +107,6 @@ body{
 }
 .container_quemSomos h2{
     text-transform: uppercase;
-    margin: 1em 0;
 }
 .container_quemSomos p{
     font-weight: lighter;
@@ -109,7 +115,43 @@ body{
     padding: 0 4em;
 }
 
+.container_oQueFazemos{
+    background-color: rgba(196,196,196,17%);
+    padding: 40px 0;
+    text-align: center;
+}
 
+.container_oQueFazemos h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 0 1.3em 0;
+}
+
+.lista_oQueFazemos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lista_oQueFazemos img{
+    width: 220px;
+}
+.lista_oQueFazemos h4{
+    text-transform: uppercase;
+    margin: .75em 0;
+}
+.lista_oQueFazemos p{
+    margin: .75em 0;
+    font-weight: lighter;
+    padding: 0 15px;
+    line-height: 25px;
+}
+.info_moradia, .info_gerenciamento,.info_reforma{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #BBBDBF;
+    border-radius: 5px;
+    text-align: center;
+}
 
 @media screen and (min-width: 320px) and (max-width: 800px){
     header, main, footer{
