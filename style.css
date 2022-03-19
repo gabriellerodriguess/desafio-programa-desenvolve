@@ -17,7 +17,7 @@ body{
     height: 80px;
 }
 .img_logo{
-    height: 75px;
+    height: auto;
 }
 
 .nav_header a{
@@ -89,4 +89,49 @@ body{
     background-color: #fff;
     color: #132235;
     border: 2px solid #132235;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 800px){
+    header, main, footer{
+        width: auto;
+    }
+    .container_header{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    .nav_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav_header a{
+        font-size: 1em;
+        margin: 0.75em .75em;
+    }
+    .background_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info_home{
+        position: unset;
+        width: 85%;
+        padding: 20px;
+    }
+    .info_home h1{
+        font-size: 1.5em ;
+    }
+    .info_home p{
+        font-size: 1.2em;
+    }
 }
