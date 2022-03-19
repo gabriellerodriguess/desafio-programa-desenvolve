@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container_header{
+    background-color: #132235;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 80px;
+}
+.img_logo{
+    height: 75px;
+}
+
+.nav_header a{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 2.5em;
+    margin-right: 1em;
+}
+
+.nav_header a:hover{
+    cursor: pointer;
+}
+
+
+
