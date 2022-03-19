@@ -130,6 +130,7 @@ body{
 .lista_oQueFazemos{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .lista_oQueFazemos img{
@@ -190,5 +191,13 @@ body{
     }
     .info_quemSomos{
         width: auto;
+    }
+    .lista_oQueFazemos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .info_moradia,.info_gerenciamento,.info_reforma{
+        margin-bottom: 20px;
     }
 }
