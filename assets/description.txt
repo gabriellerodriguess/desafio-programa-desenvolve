@@ -8,3 +8,5 @@ Cores: Azul escuro: #132235
 	Azul claro: #6DDAD3
 	Branco: #FFF
 	Cinza: #BBBDBF
+	Vermelho: #FF1D23
+	Verde: #82BF6E
