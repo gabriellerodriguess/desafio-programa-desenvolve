@@ -5,26 +5,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.center_elements{
+.centerElements{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container_header{
+.containerHeader{
     background-color: #132235;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    height: 80px;
-}
-
-.img_logo{
     height: auto;
 }
 
-.nav_header a{
+.imgLogo{
+    height: auto;
+}
+
+.navHeader a{
     color: #FFF;
     font-size: 14px;
     text-decoration: none;
@@ -33,22 +33,22 @@
     margin-right: 1em;
 }
 
-.nav_header a:hover{
+.navHeader a:hover{
     cursor: pointer;
 }
 
-.container_home{
+.containerHome{
     width: auto;
 }
 
-.background_image{
+.backgroundImage{
     background-image: url('assets/img_home.png');
     height: 540px;
     background-position: center;
     background-size: cover;
 }
 
-.info_home{
+.infoHome{
     background-color: rgba(255,255,255,0.67);
     width: 70%;
     height: 70%;
@@ -62,14 +62,14 @@
     padding: 1em;
 }
 
-.info_home h1{
+.infoHome h1{
     color: #132235;
     font-size: 2em;
     text-align: center;
     padding: 0 2em;
 }
 
-.info_home p{
+.infoHome p{
     color: #132235;
     font-size: 1.5em;
     text-align: center;
@@ -77,9 +77,10 @@
     padding: 0 1.5em;
 }
 
-.btn_padrao{
+.btnPadrao{
     background-color: #132235;
     color: #fff;
+    text-align: center;
     font-size: .75em;
     text-decoration: none;
     text-transform: uppercase;
@@ -88,69 +89,69 @@
     transition: 300ms;
 }
 
-.btn_padrao:hover{
+.btnPadrao:hover{
     background-color: #fff;
     color: #132235;
     border: 2px solid #132235;
     cursor: pointer;
 }
 
-.container_quemSomos{
+.containerQuemSomos{
     margin: 2em 0;
     padding: 1em 0 2em 0;
     text-align: center;
 }
-.info_quemSomos{
+.infoQuemSomos{
     width: 900px;
     margin: 20px auto;
 }
 
-.container_quemSomos h2{
+.containerQuemSomos h2{
     text-transform: uppercase;
 }
 
-.container_quemSomos p{
+.containerQuemSomos p{
     font-weight: lighter;
     font-size: 20px;
     margin: 2.5em 0;
     padding: 0 4em;
 }
 
-.container_oQueFazemos{
+.containerOQueFazemos{
     background-color: rgba(196,196,196,17%);
     padding: 40px 0;
     text-align: center;
 }
 
-.container_oQueFazemos h3{
+.containerOQueFazemos h3{
     font-size: 1.5em;
     text-transform: uppercase;
     margin: 0 0 1.3em 0;
 }
 
-.lista_oQueFazemos{
+.listaOQueFazemos{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.lista_oQueFazemos img{
+.listaOQueFazemos img{
     width: 220px;
 }
 
-.lista_oQueFazemos h4{
+.listaOQueFazemos h4{
     text-transform: uppercase;
     margin: .75em 0;
 }
 
-.lista_oQueFazemos p{
+.listaOQueFazemos p{
     margin: .75em 0;
     font-weight: lighter;
     padding: 0 15px;
     line-height: 25px;
 }
 
-.info_moradia, .info_gerenciamento, .info_reforma{
+.infoMoradia, .infoGerenciamento, .infoReforma{
     width: 250px;
     padding: 10px;
     border: 1px solid #BBBDBF;
@@ -158,7 +159,7 @@
     text-align: center;
 }
 
-.container_formulario{
+.containerFormulario{
     background-image: url('assets/img_form.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,7 +172,7 @@
 
 }
 
-.info_form{
+.infoForm{
     width: 30%;
     height: 90%;
     background-color: #FFF;
@@ -182,13 +183,13 @@
     border-radius: 10px;
 }
 
-.info_form h4{
+.infoForm h4{
     font-size: 1.5em;
     text-align: center;
     padding: 0 1em;
 }
 
-.input_padrao{
+.inputPadrao{
     width: 80%;
     padding: 10px;
     border: 1px solid #BBBDBF;
@@ -197,12 +198,12 @@
     resize: none;
 }
 
-.input_padrao::-webkit-input-placeholder{
+.inputPadrao::-webkit-input-placeholder{
     color: #BBBDBF;
     font-family: 'Roboto', sans-serif;
 }
 
-.container_rodape{
+.containerRodape{
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -210,32 +211,32 @@
     border-bottom: 1px solid #BBBDBF;
 }
 
-.container_rodape h6{
+.containerRodape h6{
     color: #132235;
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.links_rodape{
+.linksRodape{
     display: flex;
 }
 
-.lista_links{
+.listaLinks{
     display: flex;
     flex-direction: column;
     margin: 10px 20px;
     list-style: none;
 }
 
-.lista_links a{
+.listaLinks a{
     color: #BBBDBF;
     text-decoration: none;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
-.lista_links .fa-brands{
+.listaLinks .fa-brands{
     color:#132235;
 }
 
@@ -245,71 +246,98 @@
     color:#BBBDBF;
 }
 
+.error{
+    position: fixed;
+    width: 20%;
+    bottom: 10px;
+    left: 40%;
+    padding: 10px;
+    background-color: #FF1D23;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.success{
+    position: fixed;
+    width: 20%;
+    bottom: 10px;
+    left: 40%;
+    padding: 10px;
+    background-color: #82BF6E;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 800px){
-    header, main, footer{
+    .containerHeader, .containerMain, .containerFooter{
         width: auto;
     }
 
-    .container_header{
+    .containerHeader{
         height: auto;
         flex-direction: column;
         align-items: center;
         padding: 15px 0;
     }
 
-    .nav_header{
+    .navHeader{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .nav_header a{
+    .navHeader a{
         font-size: 1em;
         margin: 0.75em .75em;
     }
 
-    .background_image{
+    .backgroundImage{
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .info_home{
+    .infoHome{
         position: unset;
         width: 85%;
         padding: 20px;
     }
 
-    .info_home h1{
+    .infoHome h1{
         font-size: 1.5em ;
     }
 
-    .info_home p{
+    .infoHome p{
         font-size: 1.2em;
     }
 
-    .info_quemSomos{
+    .infoQuemSomos{
         width: auto;
     }
 
-    .lista_oQueFazemos{
+    .listaOQueFazemos{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
 
-    .info_moradia,.info_gerenciamento,.info_reforma{
+    .infoMoradia,.infoGerenciamento,.infoReforma{
         margin-bottom: 20px;
     }
 
-    .info_form{
+    .infoForm{
         width: auto;
         height: auto;
         margin: 20px;
         padding: 20px;
     }
+    .btnPadrao{
+        width: 80%;
+    }
 
-    .input_padrao{
+    .inputPadrao{
         margin: 10px;
     }
 }

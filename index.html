@@ -7,85 +7,85 @@
   <title>Home | F4Life</title>
   <script src="https://kit.fontawesome.com/41323b41f6.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="assets/icone_favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="container_header">
-    <img src="assets/f4life_logo.png" class="img_logo" alt="Logo da empresa F4Life">
-    <nav class="nav_header">
+  <header class="containerHeader">
+    <img src="assets/f4life_logo.png" class="imgLogo" alt="Logo da empresa F4Life">
+    <nav class="navHeader">
       <a href="#quemSomos">Quem somos</a>
       <a href="#oQueFazemos">O que fazemos</a>
       <a href="#faleConosco">Fale conosco</a>
     </nav>
   </header>
-  <main class="container_main">
-    <section class="container_home">
-      <div class="background_image center_elements">
-        <div class="info_home">
+  <main class="containerMain">
+    <section class="containerHome">
+      <div class="backgroundImage centerElements">
+        <div class="infoHome">
           <h1>Tudo que um estudante precisa para se sentir em casa.</h1>
           <p>Estamos junto com o estudante em todos os momentos da jornada universitária!</p>
-          <a href="#faleConosco" class="btn_padrao">Saiba Mais</a>
+          <a href="#faleConosco" class="btnPadrao">Saiba Mais</a>
         </div>
       </div>
     </section>
-    <section class="container_quemSomos" id="quemSomos">
-      <div class="info_quemSomos">
+    <section class="containerQuemSomos" id="quemSomos">
+      <div class="infoQuemSomos">
         <h2>Quem somos</h2>
         <p>Fazemos a ponte entre o proprietário e o estudante.</p>
         <p>Administramos a parte burocrática do aluguel e oferecemos toda a assistência necessária para que o estudante se sinta em casa.</p>
         <p>Nossa prioridade é otimizar a vida de estudantes e proprietários de imóveis, tornando a locação mais fácil, segura e rápida.</p>
-        <a class="btn_padrao">Saiba mais</a>
+        <a class="btnPadrao">Saiba mais</a>
       </div>
     </section>
-    <section class="container_oQueFazemos" id="oQueFazemos">
+    <section class="containerOQueFazemos" id="oQueFazemos">
       <h3>O que fazemos</h3>
-      <div class="lista_oQueFazemos">
-        <div class="info_moradia">
+      <div class="listaOQueFazemos">
+        <div class="infoMoradia">
           <img src="assets/img_moradia.png" alt="Imagem representando uma moradia.">
           <h4>Moradia</h4>
           <p>Incríveis apartamentos e kitnets localizadas próximas as faculdades e às principais avenidas da cidade.
             Oferecemos a opção de imóveis mobiliados, individuais ou compartilhados.</p>
         </div>
-        <div class="info_gerenciamento">
+        <div class="infoGerenciamento">
           <img src="assets/img_gerenciamento.png" alt="Imagem representando o gerenciamento de um negócio.">
           <h4>Gerenciamento</h4>
           <p>Selecione os imóveis do seu jeito, agende visitas online, negocie sem intermediários e assine o contrato digitalmente.
             Sem burocracia e de forma segura para ambas as partes.</p>
         </div>
-        <div class="info_reforma">
+        <div class="infoReforma">
           <img src="assets/img_reforma.png" alt="Imagem representando a reforma de um apartamento.">
           <h4>Reparos</h4>
           <p>Preparamos o imóvel para a recepção de universitários, em um ambiente específico e otimizado para a graduação. </p>
         </div>
       </div>
     </section>
-    <section class="container_formulario">
-      <form class="info_form" id="faleConosco">
+    <section class="containerFormulario">
+      <form class="infoForm" id="faleConosco">
         <h4>Receba nosso contato sem compromisso!</h4>
-        <input type="text" id="user_name" placeholder="Seu nome completo" class="input_padrao">
-        <input type="text" id="user_mail" placeholder="Seu e-mail" class="input_padrao">
-        <textarea rows='10' placeholder="Sua mensagem" class="input_padrao"></textarea>
-        <button type="submit" class="btn_padrao">Enviar</button>
+        <input type="text" id="userName" placeholder="Seu nome completo" class="inputPadrao">
+        <input type="text" id="email" placeholder="Seu e-mail" class="inputPadrao">
+        <textarea rows='10' placeholder="Sua mensagem" class="inputPadrao" id="mensage"></textarea>
+        <button type="submit" class="btnPadrao" id="result">Enviar</button>
       </form>
     </section>
   </main>
-  <footer>
-    <section class="container_rodape">
-      <ul class="lista_links">
+  <footer class="containerFooter">
+    <section class="containerRodape">
+      <ul class="listaLinks">
         <li><h6>Dúvidas</h6></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="#">SAQ</a></li>
         <li><a href="#">Proprietários</a></li>
         <li><a href="#">Imóveis</a></li>
       </ul>
-      <ul class="lista_links">
+      <ul class="listaLinks">
         <li><h6>Institucional</h6></li>
         <li><a href="#">Nossos serviços</a></li>
         <li><a href="#">Parcerias</a></li>
         <li><a href="#">Alugue um imóvel</a></li>
       </ul>
-      <ul class="lista_links">
+      <ul class="listaLinks">
         <li><h6>Redes sociais</h6></li>
         <li>
           <a href="https://www.facebook.com/" target="_blank">
@@ -105,11 +105,13 @@
       </ul>
     </section>
     <section class="copyright">
-      <span>Copyright &#169; | Gabrielle Rodrigues</span>
+      <span>Copyright &#169; 2022 | Gabrielle Rodrigues</span>
       <a href="https://github.com/gabriellerodriguess/desafio-programa-desenvolve" target="_blank">
         <i class="fa-brands fa-github"></i>
       </a>
     </section>
   </footer>
+  <div id="alert"></div>
+  <script src="main.js"></script>
 </body>
 </html>
