@@ -57,6 +57,7 @@ function validateInput(event){
             mensage = "Erro de envio. Insira um e-mail."
             return true
         }
+
         if(!emailInput.value.includes('@')){
             mensage = "Erro de envio. E-mail inválido. Deve conter '@'" 
             return true
@@ -65,6 +66,7 @@ function validateInput(event){
         const emailSplited = emailInput.value.split('@')
         const user = emailSplited[0]
         const domain = emailSplited[1]
+        const domainSplited = domain.split('.com')
         
         if(user.length > 32){
             mensage = "Erro de envio. E-mail inválido. Deve conter de 1 a 32 caracteres."
@@ -83,8 +85,18 @@ function validateInput(event){
             return true
         }
 
-        for(let character in domain){
-            if(!validCharactersDomain.includes(domain[character])){
+        if(domainSplited[0].length == 0){
+            mensage = "Erro de envio. E-mail inválido. Deve conter 'dominio.com'."
+            return true
+        }
+
+        if(domainSplited[0].length > 16){
+            mensage = "Erro de envio. E-mail inválido. Deve conter de 1 a 16 caracteres."
+            return true
+        }
+
+        for(let character in domainSplited[0]){
+            if(!validCharactersDomain.includes(domainSplited[0][character])){
                 mensage = "Erro de envio. E-mail inválido. Não deve conter letras maiúsculas ou '#$%^'"
                 return true
             }
