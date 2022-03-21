@@ -326,7 +326,8 @@
     }
 
     .infoMoradia,.infoGerenciamento,.infoReforma{
-        margin-bottom: 20px;
+        width: auto;
+        margin: 20px;
     }
 
     .infoForm{
