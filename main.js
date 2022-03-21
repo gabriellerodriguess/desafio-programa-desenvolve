@@ -107,4 +107,4 @@ function validateInput(event){
 }
 
 
-result.onclick = validateInput
+submitInput.onclick = validateInput
