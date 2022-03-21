@@ -102,6 +102,9 @@
     text-align: center;
 }
 .infoQuemSomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 900px;
     margin: 20px auto;
 }
@@ -113,8 +116,8 @@
 .containerQuemSomos p{
     font-weight: lighter;
     font-size: 20px;
-    margin: 2.5em 0;
-    padding: 0 4em;
+    margin: 1.5em 0;
+    padding: 0 2em;
 }
 
 .containerOQueFazemos{
