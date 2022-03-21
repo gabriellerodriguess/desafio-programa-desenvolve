@@ -1,7 +1,7 @@
 const userNameInput = document.querySelector('#userName')
 const emailInput = document.querySelector('#email')
 const mensageInput = document.querySelector('#mensage')
-const result = document.querySelector('#result')
+const submitInput = document.querySelector('#result')
 const alertContainer = document.querySelector('#alert')
 const validCharactersUser = "abcdefghijklmnopqrstuvxwyzABCDEFGHIJKLMNOPQRSTUVXWYZ1234567890."
 const validCharactersDomain = "abcdefghijklmnopqrstuvwxyz1234567890."
@@ -100,10 +100,10 @@ function validateInput(event){
 
     if(userIsntValid() || emailIsntValid() || mensageInstValid()){
         return createAlert(false, mensage)
-    } 
-    createAlert(true, mensageDefault)
-    clearInput()
-
+    } else{
+        createAlert(true, mensageDefault)
+        clearInput()
+    }
 }
 
 
