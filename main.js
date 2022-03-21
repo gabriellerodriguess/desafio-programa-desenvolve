@@ -46,14 +46,14 @@ function validateInput(event){
     const mensageDefault = `Obrigada pelo contato! ${userNameInput.value}`
 
     function userIsntValid(){
-        if(userNameInput.value.length == 0){
+        if(userNameInput.value.length === 0){
             mensage = 'Erro de envio. Insira um nome.'
             return true
         }
     }
 
     function emailIsntValid(){
-        if(emailInput.value.length == 0){
+        if(emailInput.value.length === 0){
             mensage = "Erro de envio. Insira um e-mail."
             return true
         }
@@ -85,7 +85,7 @@ function validateInput(event){
             return true
         }
 
-        if(domainSplited[0].length == 0){
+        if(domainSplited[0].length === 0){
             mensage = "Erro de envio. E-mail inválido. Deve conter 'dominio.com'."
             return true
         }
@@ -104,7 +104,7 @@ function validateInput(event){
     }
 
     function mensageInstValid(){
-        if(mensageInput.value.length == 0){
+        if(mensageInput.value.length === 0){
             mensage = 'Erro de envio. Insira uma mensagem.'
             return true
         }
