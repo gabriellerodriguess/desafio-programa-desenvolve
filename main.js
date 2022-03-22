@@ -4,7 +4,7 @@ const mensageInput = document.querySelector('#mensage')
 const submitInput = document.querySelector('#result')
 const alertContainer = document.querySelector('#alert')
 const validCharactersUser = "abcdefghijklmnopqrstuvxwyzABCDEFGHIJKLMNOPQRSTUVXWYZ1234567890."
-const validCharactersDomain = "abcdefghijklmnopqrstuvwxyz1234567890."
+const validCharactersDomain = "abcdefghijklmnopqrstuvwxyz1234567890"
 
 function createAlert(reference, mensage){
     const iconError = 'fa-circle-exclamation'
@@ -55,7 +55,7 @@ function validateInput(event){
     function emailIsntValid(){
         if(emailInput.value.length === 0){
             mensage = "Erro de envio. Insira um e-mail."
-            return true
+            // return true
         }
 
         if(!emailInput.value.includes('@')){
